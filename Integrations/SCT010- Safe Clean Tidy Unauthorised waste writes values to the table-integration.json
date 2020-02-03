@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5a6739459e41a",
+        "Name": "SCT010- Safe Clean Tidy Unauthorised waste writes values to the table",
+        "Type": "DATABASE",
+        "LIM_id": "83ef69d1-2c5e-11e5-ad20-22000a7a05f5",
+        "Editable": true,
+        "LIM_name": "Portsmouth",
+        "Category": "Safe Clean Tidy",
+        "data_type": "integration-lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"systemID\":\"593a5fdb73ecb\",\"systemName\":\"RubbishAndRecycling\",\"query\":\"exec SafeCleanTidyUWasteGetData \\n\\t@DateReported = {current_date},\\n\\t@Reference = {case_ref},\\n\\t@Contact = {fullName},\\n\\t@Email = {emailAddress},\\n\\t@Telephone = {telephone},\\n\\t@LocationReported = {addressReport1},\\n\\t@ProvideMoreInfo = {provideMoreInfo},\\n\\t@Postcode = {postcode_selected},\\n\\t@WasteStillThere = {isTheUnauthorised},\\n\\t@WhereIsWaste = {whereIs},\\n\\t@WasteDescription = {wasteDescription},\\n\\t@WasItWitnessed ={witness},\\n\\t@WitnessedDate = {whenD},\\n\\t@WitnessComment = {provideInfo},\\n\\t@GoToCourt = {willing},\\n\\t@LandOwnership = {initialAssessment/whoOwns},\\n\\t@WhichLand = {initialAssessment/which},\\n\\t@OtherLand = {initialAssessment/other},\\n\\t@ResourceControllerOutcome = {initialAssessment/outcome},\\n\\t@AssignTo = {assignedUser3},\\n\\t@ResourceControllerComments = {initialAssessment/assessment},\\n\\t@ResourceControllerDate= {initialAssessment/JobDateTime2},\\n\\t@ResourceController = {initialAssessment/officer1},\\n\\t@CaseDueDate = {initialAssessment/caseDue},\\n\\t@CleanClearFix = {cleanClearFix},\\n\\t@AcceptJob = {accept},\\n\\t@ReasonJobRejected = {specifyReason},\\n\\t@WasteFound = {investigation/found},\\n\\t@AddressCorrect = {investigation/addressCorrect},\\n\\t@CorrectLocation = {investigation/actualAddressConcat},\\n\\t@WasteDescriptionCorrect = {investigation/descriptionCorrect},\\n\\t@CorrectWasteDescription = {investigation/descriptionOfWaste2},\\n\\t@WasteCategory = {wasteCategory},\\n\\t@Volume = {investigation/volume},\\n\\t@AccessibleForRemoval = {investigation/accessible},\\n\\t@HealthAndSafetyConcerns = {healthSafety},\\n\\t@Evidence = {evidence},\\n\\t@OfficialTip = {investigation/official},\\n\\t@ExplainWasteOther = {investigation/pleaseExplain},\\n\\t@OfficialNotices = {investigation/selectNotice},\\n\\t@OfficialNoticeDate = {investigation/dateIssued},\\n\\t@InvestigationComments = {investigation/investigationCom},\\n\\t@InvestigationDate = {investigationDate},\\n\\t@InvestigationOfficer = {investigationOfficer},\\n\\t@InvestigationOutcome = {investigationOutcome},\\n\\t@EnforcementOutcome = {outcome3},\\n\\t@CaseFileNumber = {caseNumber},\\n\\t@EnforcementDate = {JobDateTime5},\\n\\t@EnforcementOfficer = {officer4},\\n\\t@Road = {roadConcat},\\n\\t@CommentsEnforcement = {commentsEnf}\",\"results_page_columns_db\":\"\",\"secure_fields_db_database\":\"\",\"escapeTokens\":\"yes\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+    }
+]

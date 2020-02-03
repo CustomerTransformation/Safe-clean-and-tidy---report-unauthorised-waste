@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5b4f42d2ef1c8",
+        "Name": "SCT022 - Safe clean tidy users in group3",
+        "Type": "PERMISSION",
+        "LIM_id": "3f07ecf4-0dfa-11e2-b0b9-12313b03ed59",
+        "Editable": true,
+        "LIM_name": "LIM14",
+        "Category": "Safe Clean Tidy Staff",
+        "data_type": "lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"lookup_validation\":\"0\",\"permission_action\":\"list_users_in_groups\",\"user_groups\":\"USERGROUP-9c632dd9-abb5-471d-aa78-9dffccfa8243\",\"group_by_token\":\"\",\"secure_fields_db_permission\":\"\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+    }
+]

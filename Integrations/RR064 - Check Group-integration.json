@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5a6714be88f78",
+        "Name": "RR064 - Check Group",
+        "Type": "PERMISSION",
+        "LIM_id": "3f07ecf4-0dfa-11e2-b0b9-12313b03ed59",
+        "Editable": true,
+        "LIM_name": "LIM14",
+        "Category": "RubbishRecycling",
+        "data_type": "lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"lookup_validation\":\"0\",\"permission_action\":\"is_user_in_groups\",\"user_email\":\"{person/Email_Address_out}\",\"user_groups\":\"USERGROUP-9b3fb31d-68ed-4983-8e68-76e78a1545c3\",\"group_by_token\":\"\",\"is_in_groups_token\":\"is_in_group\",\"secure_fields_db_permission\":\"\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"daniela.dutu@portsmouthcc.gov.uk\"}"
+    }
+]

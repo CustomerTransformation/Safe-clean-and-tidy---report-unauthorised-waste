@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5b694e3ca92ca",
+        "Name": "GPR100 - Process metadata",
+        "Type": "HTTP",
+        "LIM_id": "3f07ecf4-0dfa-11e2-b0b9-12313b03ed59",
+        "Editable": true,
+        "LIM_name": "LIM14",
+        "Category": "z Global",
+        "data_type": "integration-lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"method\":\"GET\",\"url\":\"https://portsmouth.achieveservice.com/apibroker/task?apiKey=dd076964b120f27adef957fe303e1508f7255518fe1b36db47d0a20bac116b60cddbfa8d0a9109e11b3ab70c5e8edb3877afd4eb7a5240a2a20771138083958f&case_id={sel_case_ref}&task_status={Open}&case_status={Open}&published=1\",\"show_headers\":\"no\",\"responseType\":\"JSON\",\"strip_namespaces\":\"1\",\"path_to_values\":\"RepeatableNode\",\"fields\":\"\",\"xslt_stylesheet\":\"<?xml version=\\\"1.0\\\" encoding=\\\"utf-8\\\"?>   \\n\\n            <xsl:stylesheet version=\\\"1.0\\\"\\n\\n             xmlns:xsl=\\\"http://www.w3.org/1999/XSL/Transform\\\">\\n\\n             <xsl:output method=\\\"xml\\\" indent=\\\"yes\\\"/>\\n\\n              <xsl:key name=\\\"newcase\\\" match=\\\"RepeatableNode\\\" use=\\\"case_id\\\"/>\\n\\n             <xsl:template match=\\\"*\\\">\\n\\n                        <xsl:copy><xsl:apply-templates /></xsl:copy>\\n\\n             </xsl:template>\\n\\n    <xsl:template match = \\\"Root\\\">\\n\\n            <xsl:choose>\\n\\n            <xsl:when test=\\\"count(current()/*) = 0 \\\">\\n\\n            <Root/>\\n\\n</xsl:when>\\n\\n            <xsl:when test=\\\"current()[not(RepeatableNode)]\\\">\\n\\n                        <xsl:copy><RepeatableNode><display>\\n\\n                                                <xsl:value-of select=\\\"concat(current()/case_id, ' ', current()/process_name) \\\"></xsl:value-of>\\n\\n                                    </display>\\n\\n                                    <xsl:apply-templates /></RepeatableNode></xsl:copy>\\n\\n            </xsl:when><xsl:otherwise>\\n\\n            <Root>\\n\\n            <xsl:for-each select=\\\"RepeatableNode[count(. | key('newcase', case_id)[1]) = 1]\\\">\\n\\n                        <xsl:copy><display>\\n\\n                                                <xsl:value-of select=\\\"concat(current()/case_id, ' ', current()/process_name) \\\"></xsl:value-of>\\n\\n                                    </display>\\n\\n                                    <xsl:apply-templates /></xsl:copy>\\n\\n            </xsl:for-each>\\n\\n    </Root>\\n\\n</xsl:otherwise>\\n\\n</xsl:choose>\\n\\n    </xsl:template>\\n\\n            </xsl:stylesheet>\",\"results_page_columns\":\"\",\"secure_fields_db_http\":\"\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+    }
+]
